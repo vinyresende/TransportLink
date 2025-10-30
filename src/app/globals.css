@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    /* --color-primary: #0504AA; */
+    --color-contrast-1: #17181a;
+    --color-contrast-2: rgba(224, 224, 224, .4);
+
+    --default-font-family: "Alan Sans", sans-serif;
+}
+
+@layer base {
+    * {
+        @apply border-black;
+        /* @apply text-gray-400; */
+    }
+
+    input,
+    textarea {
+        @apply border-gray-400;
+        @apply placeholder:text-gray-400/65;
+    }
+}
